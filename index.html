@@ -5,63 +5,178 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohsen Askari</title>
   <style>
+    * { box-sizing: border-box; }
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px;
       line-height: 1.6;
-      color: #222;
-      background: #f7f7f7;
+      color: #1f2937;
+      background: #f5f7fb;
     }
-    header, section {
-      background: white;
-      padding: 24px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
     }
-    h1, h2 {
-      margin-top: 0;
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 70px 0 50px;
+    }
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 42px;
+    }
+    header p {
+      margin: 0 0 20px;
+      font-size: 18px;
+      color: #cbd5e1;
     }
     nav a {
-      margin-right: 15px;
+      color: white;
       text-decoration: none;
-      color: #333;
+      margin-right: 18px;
       font-weight: bold;
+    }
+    .hero-links a {
+      display: inline-block;
+      margin-right: 12px;
+      margin-top: 10px;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn-primary {
+      background: white;
+      color: #0f172a;
+    }
+    .btn-secondary {
+      border: 1px solid #94a3b8;
+      color: white;
+    }
+    section {
+      padding: 40px 0;
+    }
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin-top: 0;
+      font-size: 28px;
+      color: #0f172a;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      padding: 30px 0 50px;
+      color: #64748b;
+      text-align: center;
+    }
+    .small {
+      color: #64748b;
+      font-size: 15px;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Mohsen Askari</h1>
-    <p>English Language Instructor, EdTech Researcher, Writer</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#writing">Writing</a>
-      <a href="#research">Research</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container">
+      <h1>Mohsen Askari</h1>
+      <p>English Language Instructor, EdTech Researcher, Writer</p>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#writing">Writing</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="hero-links">
+        <a class="btn-primary" href="Mohsen-Askari-CV.pdf" target="_blank">Download CV</a>
+        <a class="btn-secondary" href="https://linkedin.com/in/michael-askari-ai" target="_blank">LinkedIn</a>
+      </div>
+    </div>
   </header>
 
   <section id="about">
-    <h2>About</h2>
-    <p>I am an English language instructor and educational technology researcher based in Istanbul.</p>
-  </section>
-
-  <section id="writing">
-    <h2>Writing</h2>
-    <p>Essays, reflections, and public writing will go here.</p>
+    <div class="container">
+      <div class="card">
+        <h2>About</h2>
+        <p>
+          I am an English Language Instructor and educational technology researcher based in Istanbul.
+          My work focuses on AI in language education, speaking development, teacher education,
+          student engagement, and reflective practice.
+        </p>
+        <p>
+          I use this website to share research, writing, teaching projects, and public reflections on
+          education, society, and culture.
+        </p>
+      </div>
+    </div>
   </section>
 
   <section id="research">
-    <h2>Research</h2>
-    <p>Academic projects, publications, and presentations will go here.</p>
+    <div class="container">
+      <div class="card">
+        <h2>Selected Research & Publications</h2>
+        <ul>
+          <li><strong>Reclaiming authorship in the age of generative AI: From panic to possibility</strong>, AI Magazine</li>
+          <li><strong>Speaking More, Speaking Better: Using AI Tools to Maximise Fluency, Feedback and Engagement</strong>, Modern English Teacher</li>
+          <li><strong>The Role of AI in Enhancing Presentation Skills in English Language Teaching</strong></li>
+        </ul>
+        <p class="small">A fuller publications list will be added soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="writing">
+    <div class="container">
+      <div class="card">
+        <h2>Writing</h2>
+        <p>
+          This section will include essays, commentary, reflections, and longer public writing on
+          education, politics, culture, AI, and society.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="teaching">
+    <div class="container">
+      <div class="card">
+        <h2>Teaching & Workshops</h2>
+        <p>
+          I teach English for academic and professional purposes, develop AI-supported classroom practices,
+          and design workshops on speaking, assessment, and technology in language education.
+        </p>
+      </div>
+    </div>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Contact details and academic links will go here.</p>
+    <div class="container">
+      <div class="card">
+        <h2>Contact</h2>
+        <p>Email: mohsen.askari@bogazici.edu.tr</p>
+        <p>Location: Istanbul, Türkiye</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/michael-askari-ai" target="_blank">linkedin.com/in/michael-askari-ai</a></p>
+      </div>
+    </div>
   </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Mohsen Askari</p>
+    </div>
+  </footer>
+
 </body>
 </html>
